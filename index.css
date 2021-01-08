@@ -1,12 +1,8 @@
-body{
-  background-color:#27ae60;
-}
-
 h1{
-  color:#9b59b6;
+  color:#e74c3c;
 }
 
-.form,
+.form,s
 .greetings{
   display : none;
 }
@@ -32,4 +28,31 @@ h1{
   height: 100%;
   z-index: -1;
   animation: fadeIn 0.5s linear;
+}
+
+body {
+  background: #000;
+  margin-top: 250px;
+  margin-left: 530px;
+  margin-right: 400px;
+}
+
+a {
+  color: #fff;
+}
+
+.board{
+  float: left;
+  width: 250px;
+  height: 205px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  opacity: 0.8;
+  margin: 20px;
+}
+
+button{
+  margin-left: 10px;
 }

@@ -6,23 +6,38 @@
   </head>
 
   <body>
-    <div class="js-clock">
-      <h1>00:00:00</h1>
+    <div class="board">
+      <div class="js-clock">
+        <h1>00:00:00</h1>
+      </div>
+      <form class = "js-form form">
+        <input type = "text" placeholder = "What is your name?" />
+      </form>
+      <h4 class="js-greetings greetings"></h4>
+      <form class = "js-toDoForm"> 
+        <input type = "text" placeholder = "Write a to do"/>
+      </form>
+      <span class = "js-weather"></span>
     </div>
-    <form class = "js-form form">
-      <input type = "text" placeholder = "What is your name?" />
-    </form>
-    <h4 class="js-greetings greetings"></h4>
-    <form class = "js-toDoForm"> 
-      <input type = "text" placeholder = "Write a to do"/>
-    </form>
-    <ul class = "js-toDoList">
-    </ul>
-    <span class = "js-weather"></span>
+    <div class="board">
+      <ul class = "js-toDoList">
+      </ul>
+    </div>
+
     <script src = "clock.js"></script>
     <script src = "greeting.js"></script>
     <script src = "todo.js"></script>
     <script src = "bg.js"></script>
     <script src = "weather.js"></script>
+    <a href="https://www.npmjs.com/package/magic-snowflakes"></a>
+    <script src='https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js'></script>
+    <script>
+        var sf = new Snowflakes({
+            color: "#ffffff", // 색상
+            count: 75, // 갯수
+            minOpacity: 0.2, // 최소 투명도 0: 투명 | 1: 불투명
+            maxOpacity: 0.6 // 최대 투명도
+        });
+    </script>
   </body>
 </html>
